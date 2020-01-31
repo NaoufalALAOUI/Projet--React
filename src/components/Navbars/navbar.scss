@@ -1,0 +1,28 @@
+.button {
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+
+
+.button-1 {
+    background-color: #ececec;
+    border: 3px solid #ececec;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #383838;
+  }
+  .button-1:hover {
+    box-shadow: 0 0 10px 0 #ececec inset, 0 0 20px 2px #ececec;
+    border: 3px solid #ececec;
+  }

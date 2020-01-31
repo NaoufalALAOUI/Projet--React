@@ -1,0 +1,254 @@
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 220%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+/* demo */
+body {
+  font-family: 'Poppins', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+
+.button {
+    width: 220px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-text-fill-color:  #ffffff
+  }
+
+
+
+.button-1 {
+    background-color: #74748c;
+    border: 3px solid #74748c;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #383838;
+  }
+  .button-1:hover {
+    box-shadow: 0 0 10px 0 #ececec inset, 0 0 20px 2px #ececec;
+    border: 3px solid #ececec;
+  }
+
+  .image1{
+    margin-left: -7%;
+    width: 100%;
+  }
+
+  #d11 {
+    float: left;
+  }
+   
+  #d12 {
+    float: right;
+margin-top: 3%;
+margin-right: 10%;
+  }
+
+.image{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  height: 10px;
+}
+.paragraphe{
+  position: absolute;
+
+  z-index: 1;
+  background-color:  #343454;
+  -webkit-text-fill-color:  #ffffff;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-top: 70%;
+ 
+ 
+  ;
+}
+.para{
+  background-color:  #343454;
+  z-index: 1;
+  padding-right: 10%;
+  padding-left: -10%;
+  -webkit-text-fill-color:  #ffffff;
+  margin-top: 140%;
+ 
+  text-align: justify;
+  text-justify: inter-word;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  text-align: left;
+  font-size: 15px;
+  width: 100%;
+
+}
+.city{
+  text-decoration-color: #202020;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.exemple {
+  text-align: justify;
+  font-size: 20px;
+  
+}
+.bar{
+  border: 1px solid rgb(61, 61, 61);
+ 
+  margin-left:10%;
+  margin-right: 10%;
+}
+.interested{
+  margin-left:10%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+.secondary{
+  -webkit-text-fill-color:  #c3c3c3;
+}
+
+
+.index1{
+  background-color:  #343454	;
+  
+
+}.index2{
+  z-index: 1;
+}
+.bar1{
+  border: 1px solid rgb(255, 255, 255);
+ 
+  margin-left:10%;
+  margin-right: 10%;
+}
+.image2{
+  background-color:  #74748c;
+  color:#74748c;
+  z-index: inherit 1;
+}
+
+.button1 {
+  width: 190px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+  margin-left: 110px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  -webkit-text-fill-color:  #ffffff;
+}
+
+
+
+.button-2{
+  background-color: #74748c;
+  border: 3px solid #74748c;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #383838;
+}
+.button-2:hover {
+  box-shadow: 0 0 10px 0 #ececec inset, 0 0 20px 2px #ececec;
+  border: 3px solid #ececec;
+}
+.index11{
+  z-index: 6;
+  border-top-color:  darken($color: #000000, $amount: 0);
+  border-top:3px solid
+}
+
+.indexx{
+  z-index: 1;
+}
+.cors{
+  background-color: white;
+}
+.Simple{
+  font-size:44px
+}
+.icon{
+  background-color:#74748c ;
+}
+.car{  
+    background-color: #f4f4fc
+}
